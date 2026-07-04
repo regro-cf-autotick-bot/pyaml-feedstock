@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyaml
-  version: "26.2.1"
+  version: "26.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyaml-${{ version }}.tar.gz
-  sha256: 489dd82997235d4cfcf76a6287fce2f075487d77a6567c271e8d790583690c68
+  sha256: 11cda3a796efc6dbce0d56836be56cfd26289dad07bcd78e9904086729929c93
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
